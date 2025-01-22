@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Repo Chat</title>
+    <meta charset="UTF-8">
+    
+    <!-- External Libraries -->
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/highlight.min.js"></script>
+    <link rel="stylesheet" href="lib/github.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <style>
+        /* Ensure proper size constraints */
+        body {
+            min-width: 400px;
+            min-height: 600px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Status Messages Container -->
+        <div id="messages" class="messages-container"></div>
+
+        <!-- Settings Panel -->
+        <div id="settings" class="settings-container"></div>
+
+        <!-- Repository Info -->
+        <div id="repo-info" class="repo-info-container"></div>
+
+        <!-- Main Chat Interface -->
+        <div id="chat" class="chat-container">
+            <!-- Chat messages will be populated here -->
+            <div id="chat-messages" class="messages-area"></div>
+            
+            <!-- Chat Input Area -->
+            <div class="input-area">
+                <textarea 
+                    id="user-input" 
+                    placeholder="Ask about this repository..."
+                    rows="3"
+                ></textarea>
+                <button id="send-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.5.5 0 0 1-.898.03l-2.184-4.369-4.369-2.184a.5.5 0 0 1 .03-.898L14.546.002a.5.5 0 0 1 .54.11z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <span>Processing...</span>
+        </div>
+
+        <!-- Resize Handle -->
+        <div id="resize-handle" class="resize-handle"></div>
+    </div>
+
+    <!-- App Script -->
+    <script type="module" src="dist/bundle.js"></script>
+</body>
+</html>

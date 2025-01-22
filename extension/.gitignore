@@ -1,0 +1,5 @@
+node_modules/
+.env
+extension.pem
+extension.crx
+dist/

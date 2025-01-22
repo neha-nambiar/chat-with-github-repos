@@ -1,0 +1,10 @@
+{
+    "name": "github-repo-chat-api",
+    "version": "1.0.0",
+    "dependencies": {
+      "@octokit/rest": "^19.0.0"
+    },
+    "engines": {
+      "node": ">=18"
+    }
+  }

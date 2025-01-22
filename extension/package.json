@@ -1,0 +1,25 @@
+{
+    "name": "github-repo-chat",
+    "version": "1.0.0",
+    "description": "Chat with GitHub repositories using AI",
+    "private": true,
+    "scripts": {
+      "build": "webpack --config webpack.config.js",
+      "watch": "webpack --watch --config webpack.config.js",
+      "dev": "webpack serve --config webpack.config.js",
+      "prod": "NODE_ENV=production webpack --config webpack.config.js"
+    },
+    "dependencies": {
+      "openai": "^4.0.0",
+      "marked": "^4.3.0",
+      "highlight.js": "^11.7.0"
+    },
+    "devDependencies": {
+      "webpack": "^5.80.0",
+      "webpack-cli": "^5.0.2",
+      "webpack-dev-server": "^4.13.3",
+      "copy-webpack-plugin": "^11.0.0",
+      "css-loader": "^6.7.3",
+      "style-loader": "^3.3.2"
+    }
+  }
