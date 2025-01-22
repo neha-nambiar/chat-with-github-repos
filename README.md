@@ -49,24 +49,12 @@ npm install
 npm run build
 ```
 
-Then load the `extension/dist` folder as an unpacked extension in Chrome.
-
-### Development
-
-```bash
-# Watch mode for development
-npm run watch
-
-# Production build
-npm run prod
-```
+Then load the `extension` folder as an unpacked extension in Chrome.
 
 ### Core Dependencies
 
 - OpenAI API for intelligent responses
 - GitHub API for repository context
-- Marked.js for response formatting
-- Highlight.js for code syntax highlighting
 
 ## 🔒 Security
 
@@ -77,34 +65,13 @@ npm run prod
 - No data collection
 - All communication is encrypted
 
-## 🎯 Roadmap
+## 🎯 Next Steps
 
 - [ ] Support for private repositories
-- [ ] Repository-wide search and context
-- [ ] Code explanation with visual diagrams
-- [ ] Integration with GitHub discussions
 - [ ] Custom AI model selection
 
-## 🤝 Contributing
-
-Contributions welcome! Some areas that need improvement:
-
-- Enhanced error handling
-- Better token management
-- Additional conversation features
-- UI/UX improvements
-- Documentation
-
-## 📝 Notes
+## 📝 To be Noted
 
 - Works best with public repositories
 - Requires OpenAI API credits
 - Response quality depends on repository documentation and code clarity
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) file for details.
-
----
-
-Built for developers, by developers. Happy coding! 🚀
